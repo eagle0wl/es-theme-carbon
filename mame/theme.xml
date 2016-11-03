@@ -23,9 +23,9 @@
 
 		<image name="logo">
 			<path>./art/system.svg</path>
-			<pos>0.266 0.074</pos>
-			<maxSize>0.460 0.126</maxSize>
-			<origin>0.5 0.5</origin>
+			<pos>0.025 0.0775</pos>
+			<maxSize>0.55 0.1</maxSize>
+			<origin>0 0.5</origin>
 		</image>
 		
 		<image name="logo2" extra="true">
@@ -38,10 +38,125 @@
 		
 	</view>
 
-	<view name="basic">		
+	<view name="basic">
+	
+		<textlist name="gamelist">
+			<fontSize>0.038</fontSize>
+			<pos>0.025 0.18</pos>
+			<size>0.950 0.72</size>
+			<alignment>center</alignment>
+			<horizontalMargin>0.01</horizontalMargin>
+		</textlist>
+		
 	</view>
 
 	<view name="detailed">
+	
+		<image name="md_image">
+			<pos>0.56 0.395</pos>
+			<maxSize>0.28 0.39</maxSize>
+			<origin>0.5 0.5</origin>
+		</image>
+
+		<text name="md_lbl_releasedate">
+			<fontSize>0.03</fontSize>
+			<pos>0.72 0.18</pos>
+		</text>
+		
+		<datetime name="md_releasedate">
+			<fontSize>0.03</fontSize>
+			<pos>0.74 0.22</pos>
+		</datetime>
+
+		<text name="md_lbl_publisher">
+			<fontSize>0.03</fontSize>
+			<pos>0.72 0.26</pos>
+		</text>
+		
+		<text name="md_publisher">
+			<fontSize>0.03</fontSize>
+			<pos>0.74 0.29</pos>
+		</text>
+
+		<text name="md_lbl_developer">
+			<fontSize>0.03</fontSize>
+			<pos>0.72 0.34</pos>
+		</text>
+		
+		<text name="md_developer">
+			<fontSize>0.03</fontSize>
+			<pos>0.74 0.375</pos>
+		</text>
+
+		<text name="md_lbl_genre">
+			<fontSize>0.03</fontSize>
+			<pos>0.72 0.425</pos>
+		</text>
+		
+		<text name="md_genre">
+			<fontSize>0.03</fontSize>
+			<pos>0.74 0.46</pos>
+		</text>
+
+		<text name="md_lbl_playcount">
+			<fontSize>0.03</fontSize>
+			<pos>0.72 0.51</pos>
+		</text>
+		
+		<text name="md_playcount">
+			<fontSize>0.03</fontSize>
+			<pos>0.74 0.54</pos>
+		</text>
+
+		<text name="md_description">
+			<fontSize>0.034</fontSize>
+			<size>0.58 0.295</size>
+			<pos>0.42 0.62</pos>
+		</text>
+		
+		<textlist name="gamelist">
+			<pos>0 0.166</pos>
+			<fontSize>0.038</fontSize>
+			<size>0.4 0.75</size>
+			<horizontalMargin>0.01</horizontalMargin>
+		</textlist>
+		
+		<text name="md_numberoflist">
+			<alignment>right</alignment>
+			<color>999999</color>
+			<fontSize>0.04</fontSize>
+			<pos>0.2 0.115</pos>
+			<size>0.2 0.038</size>
+		</text>
+
+		<!-- invisible fields -->
+		<text name="md_players">
+			<pos>1 1</pos>
+		</text>
+		
+		<text name="md_lbl_players">
+			<pos>1 1</pos>
+		</text>
+		
+		<text name="md_lbl_lastplayed">
+			<pos>1 1</pos>
+		</text>
+		
+		<datetime name="md_lastplayed">
+			<pos>1 1</pos>
+		</datetime>
+		
+		<text name="md_lbl_rating">
+			<pos>1 1</pos>
+		</text>
+
+		<rating name="md_rating">
+			<pos>1 1</pos>
+			<size>0.028 0.028</size>
+			<filledPath>./../art/star_filled_spacing.svg</filledPath>
+			<unfilledPath>./../art/star_hollow_3_spacing.svg</unfilledPath>
+		</rating>
+	
 	</view>
 	
 </theme>
